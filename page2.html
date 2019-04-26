@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>page2</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <style media="screen">
+      * {
+        padding : 0;
+        margin : 0;
+      }
+      body{
+				font-family: 'Noto Sans KR';
+        background-color: #8e857c;
+        margin-bottom: 30px;
+			}
+      .clear {
+        clear: both;
+        height: 0px;
+        overflow: hidden;
+      }
+      #navigation {
+        position : fixed;
+        display:inline;
+        width: 220px;
+        height: 100%;
+        padding-left: 30px;
+        padding-top: 10px;
+        border-right: solid 2px;
+        list-style: none;
+        font-family: 'Oswald';
+        background-color: #a9947f;
+      }
+      #navigation a {
+        text-decoration: none;
+        color: black;
+      }
+      #navigation a:hover {
+        color: white;
+      }
+      #navigation img {
+        padding-top: 250%;
+        width: 210px;
+        height: auto;
+      }
+      .fixed {
+        position: fixed;
+        height: 80px;
+        width: 80px;
+        left: 94%;
+        top: 88%;
+      }
+      .fixed img{
+        width: 80px;
+        height: 80px;
+      }
+      #title {
+        font-size: 40pt;
+      }
+      .navigation_category {
+        font-size: 30pt;
+      }
+      #main_paragraph {
+        margin-left: 280px;
+        padding-top: 10px;
+      }
+      #main_paragraph h1 {
+        font-family: 'Rochester';
+        font-size: 50px;
+      }
+      #footer {
+        margin-top: 30px;
+        margin-left: 280px;
+      }
+      #footer li{
+				list-style: none;
+				float: left;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+      .footer_line{
+				margin: 0px;
+				border: none;
+				border-bottom: solid 1px #000000;
+				width: 98.5%;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+      /*General Navigation ends here*/
+      #main_paragraph li{
+				list-style: none;
+				float: left;
+				width: 24.3%;
+        height: 410px;
+				margin: 0px;
+        display: block;
+			}
+      .font_target1{
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <ul id="navigation">
+        <a href ="index.html" id="title">Siegfried</a>
+        <li>
+          <a href ="page1.html" class="navigation_category">His Story</a>
+        </li>
+        <li>
+          <a href ="page2.html" class="navigation_category">His Food</a>
+        </li>
+        <li>
+          <a href ="page3.html" class="navigation_category">His Life</a>
+        </li>
+        <img src="navigation_background.png"/>
+      </ul>
+    </div>
+    <div class="fixed">
+        <a href="#top"><img src="up.png"/></a>
+    </div>
+    <!--General Navigation ends here-->
+    <div id="main_paragraph">
+      <h1>
+        His Food
+      </h1>
+      <ul>
+        <li>
+          <img src="page2_img01.jpg" title="mealworms"/>
+        </li>
+        <li>
+          <img src="page2_img02.jpg" title="carrots"/>
+        </li>
+        <li>
+          <img src="page2_img03.jpg" title="pineapples"/>
+        </li>
+        <li>
+          <img src="page2_img04.jpg" title="coconuts"/>
+        </li>
+        <li>
+          <img src="page2_img05.jpg" title="papayas"/>
+        </li>
+        <li>
+          <img src="page2_img06.jpg" title="strawberries"/>
+        </li>
+        <li>
+          <img src="page2_img07.jpg" title="sunflower_seeds"/>
+        </li>
+        <li>
+          <img src="page2_img08.jpg" title="hedgehog_food"/>
+        </li>
+        <div class="clear"></div>
+      </ul>
+      <br/>
+      <p class="font_target1">
+        His main diet is the hedgehog food, but Siegfried enjoys a variety of snacks.
+        <br/>
+        <br/>
+        His favorite, like most of the other hedgehogs, are mealworms. But I can't feed him theese often because they are quite expensive. Most of the time I give him papayas and pineapples. They say hedgehogs like things like cabbages and nuts, but Siegfried doesn't seem to be interested in them.
+      </p>
+    </div>
+    <div id="footer">
+      <div class="footer_line"></div>
+      <ul>
+        <li>
+          <img src="footer_icon1.png"/>
+        </li>
+        <li>
+          <img src="footer_icon2.png"/>
+        </li>
+        <li>
+          <img src="footer_icon3.png"/>
+        </li>
+        <li>
+          <img src="footer_icon4.png"/>
+        </li>
+        <div class="clear"></div>
+      </ul>
+      <div class="footer_line"></div>
+      <div id="footer_text">
+        Copyright 2019 Lee Eun Bok
+      </div>
+    </div>
+  </body>
+</html>
