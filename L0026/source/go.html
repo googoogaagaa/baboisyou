@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Suka Mura</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="fixed">
+			<a href="#top"><img src="./imgfolder/logo.png"/></a>
+	</div>
+	<nav id="navigation-menu">
+		<ul>
+			<li><a href="#section-1"></a></li>
+			<li><a href="#section-2"></a></li>
+			<li><a href="#section-3"></a></li>
+			<li><a href="#section-4"></a></li>
+			<li><a href="#section-5"></a></li>
+		</ul>
+	</nav>
+
+	<div id="content">
+		<section id="section-1">
+			<div class="content">
+				<div id="b1" class="back">
+		  		<img src="./imgfolder/title.png" class="paragraph"/>
+		  	</div>
+			</div>
+		</section>
+		<section id="section-2">
+			<div class="content">
+				<div id="b2" class="back">
+		  		<img src="./imgfolder/introduction.png" class="paragraph"/>
+		  	</div>
+			</div>
+		</section>
+		<section id="section-3">
+			<div class="content">
+				<div id="video">
+		      <iframe width="1440" height="810" src="https://www.youtube.com/watch?v=ifXalt3MJtM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		    </div>
+			</div>
+		</section>
+		<section id="section-4">
+
+				<div class="CSSgal">
+					<s id="s1"></s>
+					<s id="s2"></s>
+					<s id="s3"></s>
+					<s id="s4"></s>
+					<s id="s5"></s>
+					<div class="slider">
+					 <div>
+						 <img src="./imgfolder/기능1.png">
+					 </div>
+					 <div>
+						 <img src="./imgfolder/기능2.png">
+					 </div>
+					 <div>
+						 <img src="./imgfolder/기능3.png">
+					 </div>
+					 <div>
+						 <img src="./imgfolder/기능4.png">
+					 </div>
+					 <div>
+						 <img src="./imgfolder/기능5.png">
+					 </div>
+				 </div>
+				 <div class="prevNext">
+					 <div><a href="#s5"></a><a href="#s2"></a></div>
+					 <div><a href="#s1"></a><a href="#s3"></a></div>
+					 <div><a href="#s2"></a><a href="#s4"></a></div>
+					 <div><a href="#s3"></a><a href="#s5"></a></div>
+					 <div><a href="#s4"></a><a href="#s1"></a></div>
+				 </div>
+				</div>
+				<div id="bottom_cut" class="main_paragraph">
+		      <img src="./imgfolder/img02.png">
+		    </div>
+		    <div class="main_paragraph">
+		      <img src="./imgfolder/img03.png">
+		    </div>
+		    <div class="main_paragraph">
+		      <img src="./imgfolder/img04.png">
+		    </div>
+		</section>
+		<section id="section-5">
+			<div class="content">
+				<div id="b3" class="back">
+		      <img src="./imgfolder/img05.png">
+		    </div>
+		    <div id="b4" class="back">
+					<img src="./imgfolder/lastlogo.png">
+		    </div>
+			</div>
+			<div id="footer">
+				<div class="idcard">
+					<table class="info">
+						<tr>
+							<td rowspan="3"><img src="./imgfolder/profile1.png"/></td>
+							<td class="catg">이름</td>
+							<td>조동준</td>
+						</tr>
+						<tr>
+							<td class="catg">연락처</td>
+							<td>010 8813 2874</td>
+						</tr>
+						<tr>
+							<td class="catg">이메일</td>
+							<td>ceo1206@naver.com</td>
+						</tr>
+					</table>
+				</div>
+				<div class="idcard">
+					<table class="info">
+						<tr>
+							<td rowspan="3"><img src="./imgfolder/profile2.png"/></td>
+							<td class="catg">이름</td>
+							<td>이은복</td>
+						</tr>
+						<tr>
+							<td class="catg">연락처</td>
+							<td>010 5883 2133</td>
+						</tr>
+						<tr>
+							<td class="catg">이메일</td>
+							<td>mrbernstein7777@gmail.com</td>
+						</tr>
+					</table>
+				</div>
+				<div class="idcard">
+					<table class="info">
+						<tr>
+							<td rowspan="3"><img src="./imgfolder/profile3.png"/></td>
+							<td class="catg">이름</td>
+							<td>지동환</td>
+						</tr>
+						<tr>
+							<td class="catg">연락처</td>
+							<td>010 8499 5573</td>
+						</tr>
+						<tr>
+							<td class="catg">이메일</td>
+							<td>jeedong97@gmail.com</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script src="../jquery.malihu.PageScroll2id.js"></script>
+
+	<script>
+		(function($){
+			$(window).on("load",function(){
+
+				$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:"#navigation-menu a"
+				});
+
+				$("a[rel='next']").click(function(e){
+					e.preventDefault();
+					var to=$(this).parent().parent("section").next().attr("id");
+					$.mPageScroll2id("scrollTo",to);
+				});
+
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>

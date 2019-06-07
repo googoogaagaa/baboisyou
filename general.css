@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: "맑은 고딕", "돋움";
+  font-size: 100%
+}
+[class*="c_"] {
+  float: left;
+  padding: 10px;
+}
+[class*="c_"] {
+  width: 100%
+}
+@media only screen and (max-width: 960px;) {
+  .c_m_1 {width: 8.33%;}
+  .c_m_2 {width: 16.66%;}
+  .c_m_3 {width: 25%;}
+  .c_m_4 {width: 33.33%;}
+  .c_m_5 {width: 41.66%;}
+  .c_m_6 {width: 50%;}
+  .c_m_7 {width: 58.33%;}
+  .c_m_8 {width: 66.66%;}
+  .c_m_9 {width: 75%;}
+  .c_m_10 {width: 83.33%;}
+  .c_m_11 {width: 91.66%;}
+  .c_m_12 {width: 100%}
+}
+@media only screen and (min-width: 960px) {
+  .c_1 {width: 8.33%;}
+  .c_2 {width: 16.66%;}
+  .c_3 {width: 25%;}
+  .c_4 {width: 33.33%;}
+  .c_5 {width: 41.66%;}
+  .c_6 {width: 50%;}
+  .c_7 {width: 58.33%;}
+  .c_8 {width: 66.66%;}
+  .c_9 {width: 75%;}
+  .c_10 {width: 83.33%;}
+  .c_11 {width: 91.66%;}
+  .c_12 {width: 100%}
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#navigation {
+  position : fixed;
+  display:inline;
+  list-style: none;
+  width: 100%;
+  background-color: #none;
+}
+#contents {
+  width: 730px;
+  margin-left: 350px;
+  margin-top: 95px;
+}
+
+@media only screen and (min-width: 960px) {
+  aside#menu li {
+    padding: 10px;
+    margin: 5px 0 0 0;
+    background-color: #36337a;
+    width: 325px;
+  }
+  .fixed img{
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  #contents {
+    margin-top: 310px;
+    margin-left: 10px;
+  }
+  #navigation {
+    background-color: #ffffff;
+  }
+  .fixed img{
+    width: 40px;
+    height: 40px;
+  }
+}
+.fixed {
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  left: 94%;
+  top: 88%;
+}
+
+
+header {
+  height: 80px;
+  background-color: #ffee03;
+}
+aside#menu {
+  color: #ffffff;
+}
+aside#menu li {
+  padding: 10px;
+  margin: 5px 0 0 0;
+  background-color: #36337a;
+  min-width: 325px;
+  box-shadow: 2px 2px 2px #888888;
+}
+section#main {
+  padding: 15px;
+}
+section#main p {
+  padding: 5px;
+  font-size: 0.95em;
+  line-height: 130%
+}
+aside#photos img {
+  width: 100%;
+}
+aside#photos li {
+  margin: 5px 0 0 0;
+}
+footer {
+  height: 60px;
+  padding: 10px;
+  clear: both;
+  text-align: center;
+  background-color: #e9dce7;
+}
