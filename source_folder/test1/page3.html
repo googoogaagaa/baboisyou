@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>page3</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <style media="screen">
+      * {
+        padding : 0;
+        margin : 0;
+      }
+      body{
+				font-family: 'Noto Sans KR';
+        background-color: #8e857c;
+        margin-bottom: 30px;
+			}
+      .clear {
+        clear: both;
+        height: 0px;
+        overflow: hidden;
+      }
+      #navigation {
+        position : fixed;
+        display:inline;
+        width: 220px;
+        height: 100%;
+        padding-left: 30px;
+        padding-top: 10px;
+        border-right: solid 2px;
+        list-style: none;
+        font-family: 'Oswald';
+        background-color: #a9947f;
+      }
+      #navigation a {
+        text-decoration: none;
+        color: black;
+      }
+      #navigation a:hover {
+        color: white;
+      }
+      #navigation img {
+        padding-top: 250%;
+        width: 210px;
+        height: auto;
+      }
+      .fixed {
+        position: fixed;
+        height: 80px;
+        width: 80px;
+        left: 94%;
+        top: 88%;
+      }
+      .fixed img{
+        width: 80px;
+        height: 80px;
+      }
+      #title {
+        font-size: 40pt;
+      }
+      .navigation_category {
+        font-size: 30pt;
+      }
+      #main_paragraph {
+        margin-left: 280px;
+        padding-top: 10px;
+      }
+      #main_paragraph h1 {
+        font-family: 'Rochester';
+        font-size: 50px;
+      }
+      #footer {
+        margin-top: 30px;
+        margin-left: 280px;
+      }
+      #footer li{
+				list-style: none;
+				float: left;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+      .footer_line{
+				margin: 0px;
+				border: none;
+				border-bottom: solid 1px #000000;
+				width: 98.5%;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+      /*General Navigation ends here*/
+      .font_target1{
+        font-size: 20px;
+      }
+      .main_visual {
+        width: 820px;
+        height: auto;
+      }
+      .left_text {
+        text-align: right;
+        padding-right: 5px;
+      }
+      .right_text {
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <ul id="navigation">
+        <a href ="index.html" id="title">Siegfried</a>
+        <li>
+          <a href ="page1.html" class="navigation_category">His Story</a>
+        </li>
+        <li>
+          <a href ="page2.html" class="navigation_category">His Food</a>
+        </li>
+        <li>
+          <a href ="page3.html" class="navigation_category">His Life</a>
+        </li>
+        <img src="navigation_background.png"/>
+      </ul>
+    </div>
+    <div class="fixed">
+        <a href="#top"><img src="up.png"/></a>
+    </div>
+    <!--General Navigation ends here-->
+    <div id="main_paragraph">
+      <h1>
+        His Life
+      </h1>
+      <section>
+        <table class="font_target1">
+          <tr>
+            <td>
+              <dl class="left_text">
+                <dt>
+                  <h2>
+                    Treadmill
+                  </h2>
+                </dt>
+                <dd>
+                  Hedgehogs are crazy fan of treadmills, and Siegfried is not an exception.
+                </dd>
+                <dd>
+                  You can hear him run all night long.
+                </dd>
+              </dl>
+            </td>
+            <td>
+              <video width="820" height="auto" controls autoplay>
+                <source src="page3_movie01.mp4" type="video/mp4">
+              </video>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="page3_img01.jpg" class="main_visual"/>
+            </td>
+            <td>
+              <dl class="right_text">
+                <dt>
+                  <h2>
+                    Sleeping
+                  </h2>
+                </dt>
+                <dd>
+                  Siegfried spends most of the time sleeping.
+                </dd>
+                <dd>
+                  It's said that the lack of need for hunting made domesticated hedgehogs' sleeping hours to increase.
+                </dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <dl class="left_text">
+                <dt>
+                  <h2>
+                    Drinking Water
+                  </h2>
+                </dt>
+                <dd>
+                  Domesticated hedgehogs are originally from African deserts.
+                </dd>
+                <dd>
+                  So they are used to enduring thirst but at the same time love drinking water. After a bit of excercise Siegfried always stops by to get a drink.
+                </dd>
+              </dl>
+            </td>
+            <td>
+              <img src="page3_img02.jpg" class="main_visual">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="page3_img03.jpg" class="main_visual">
+            </td>
+            <td>
+              <dl class="right_text">
+                <dt>
+                  <h2>
+                    Porcupine
+                  </h2>
+                </dt>
+                <dd>
+                  When in tension, hedgehogs roll up their body and take a defensive form.
+                </dd>
+                <dd>
+                  And when it does, it takes a figure of a porcupine or chestnut. It won't let it's stance down until it's sure that it's safe to do so.
+                </dd>
+              </dl>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <div id="footer">
+      <div class="footer_line"></div>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/">
+            <img src="footer_icon1.png"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/">
+            <img src="footer_icon2.png"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://cloud.google.com/gcp/?hl=ko&utm_source=google&utm_medium=cpc&utm_campaign=japac-KR-all-ko-dr-bkws-all-super-trial-e-dr-1003987&utm_content=text-ad-none-none-DEV_c-CRE_249736095552-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20T1%20%7C%20EXA%20%7C%20General%20%7C%201:1%20%7C%20KR%20%7C%20ko%20%7C%20cloud%20%7C%20google%20cloud%20%7C%20en-KWID_43700030027797639-kwd-6458750523&userloc_1009886&utm_term=KW_google%20cloud&gclid=EAIaIQobChMI7fKe0ZLt4QIVTKSWCh2JHQpIEAAYASAAEgJ8MPD_BwE">
+            <img src="footer_icon3.png"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwiOkYvvku3hAhUlGaYKHYlxCHQQPAgH">
+            <img src="footer_icon4.png"/>
+          </a>
+        </li>
+        <div class="clear"></div>
+      </ul>
+      <div class="footer_line"></div>
+      <div id="footer_text">
+        Copyright 2019 Lee Eun Bok
+      </div>
+    </div>
+  </body>
+</html>
